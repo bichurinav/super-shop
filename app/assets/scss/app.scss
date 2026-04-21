@@ -1,0 +1,42 @@
+@use './variables' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root * {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+  width: 96%;
+  max-width: 346px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoints-m) {
+    max-width: 696px;
+    padding: 0 36px;
+  }
+  @media (min-width: $breakpoints-l) {
+    max-width: 936px;
+    padding: 0 36px;
+  }
+  @media (min-width: $breakpoints-xl) {
+    max-width: 1216px;
+    padding: 0 112px;
+  }
+  @media (min-width: $breakpoints-xxl) {
+    max-width: 1680px;
+    padding: 0 120px;
+  }
+}
