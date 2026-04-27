@@ -4,13 +4,14 @@ import svgLoader from 'vite-svg-loader'
 // eslint-disable-next-line no-undef
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  css: ['normalize.css/normalize.css', '~/app/assets/scss/app.scss'],
+  modules: ['@vueuse/nuxt'],
+  css: ['normalize.css/normalize.css', '~/assets/scss/app.scss', '~/assets/scss/animations.scss'],
   vite: {
     plugins: [svgLoader()],
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "~/app/assets/scss/variables.scss" as *;',
+          additionalData: '@use "~/assets/scss/variables.scss" as *;',
         },
       },
     },

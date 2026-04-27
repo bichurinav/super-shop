@@ -1,0 +1,57 @@
+@use '@/assets/scss/variables' as *;
+
+.base-button {
+  display: inline-flex;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+
+    &--with-content {
+      gap: 10px;
+      height: 53px;
+      padding: 0 30px;
+      border-radius: 6px;
+    }
+
+    &--theme-empty {
+      height: auto;
+      padding: 0;
+      font-weight: 400;
+    }
+
+    &--theme-white {
+      color: #fff;
+      border: 2px solid #fff;
+    }
+
+    &--theme-primary {
+      color: $color-primary;
+      border: 2px solid $color-primary;
+    }
+
+    &--theme-dark {
+      color: #fff;
+      background: $color-primary;
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+  }
+
+  &__dropdown {
+    position: absolute;
+    z-index: $zIndexDropdown;
+    width: auto;
+    cursor: auto;
+  }
+}
