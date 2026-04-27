@@ -1,0 +1,17 @@
+.nav-mobile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  &__search {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__burger-icon {
+    position: relative;
+    top: 2px;
+    width: 17px;
+    height: 18px;
+  }
+}

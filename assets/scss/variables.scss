@@ -1,0 +1,19 @@
+$color-primary: #000;
+$color-primary-light: #707070;
+$color-primary-lighter: #d8d8d8;
+$color-light: #efefef;
+$color-secondary: #a18a68;
+
+$breakpoints-m: 288px;
+$breakpoints-l: 697px;
+$breakpoints-xl: 937px;
+$breakpoints-xxl: 1217px;
+
+$zIndexDropdown: 666;
+
+@mixin flex-start-column($gap: 24px) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+  align-items: flex-start;
+}

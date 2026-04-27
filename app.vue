@@ -1,3 +1,11 @@
+<script setup lang="ts">
+  import { useScreen } from './composables/useScreen'
+
+  useScreen()
+</script>
+
 <template>
-  <h1>Nuxt3</h1>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

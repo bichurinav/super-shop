@@ -1,5 +1,5 @@
 import type { UseFetchOptions } from 'nuxt/app'
-import { useCookie, useFetch, useRuntimeConfig } from '#imports'
+import { useCookie, useFetch, useRuntimeConfig } from '#app'
 
 export const useApiFetch = <DataT = unknown>(request: string, options?: UseFetchOptions<DataT>) => {
   const config = useRuntimeConfig()
